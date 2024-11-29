@@ -1,0 +1,240 @@
+section {
+  color: #ffffff;
+  position: relative;
+
+  .headerImageDiv {
+    width: 100%;
+    .laptopImage,
+    .tabMobileImage {
+      width: 100%;
+    }
+    .tabMobileImage {
+      display: none;
+    }
+  }
+
+  article {
+    width: 40%;
+    height: 33%;
+    position: absolute;
+    left: 4rem;
+    top: 17rem;
+
+    h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      font-weight: 800;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  p {
+    position: absolute;
+    top: 38rem;
+    left: 3rem;
+    margin: 0;
+  }
+  .buttonDiv {
+    position: absolute;
+    left: 3rem;
+    top: 43rem;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+      font-size: 1.3rem;
+      border: 0.5px solid #ffffff;
+      border-radius: 0.5rem;
+
+      transition: 0.3s all ease-in;
+
+      svg {
+        width: 2rem;
+        stroke: #000000;
+        transition: stroke 0.5s ease-in;
+      }
+    }
+
+    button:hover {
+      background-color: transparent;
+      border: 1.3px solid #ffffff;
+      color: #ffffff;
+      stroke: #ffffff;
+
+      svg {
+        stroke: #ffffff;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    article {
+      top: 11rem;
+      left: 3rem;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+
+    p {
+      top: 27rem;
+      width: 27rem;
+    }
+
+    .buttonDiv {
+      top: 33rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    article {
+      left: 1rem;
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      left: 1rem;
+      width: 20rem;
+      top: 24rem;
+    }
+
+    .buttonDiv {
+      left: 1rem;
+      top: 28rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    article {
+      width: 40%;
+      // text-align: center;
+      top: 11rem;
+      left: 2rem;
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .headerImageDiv {
+      .laptopImage,
+      .tabMobileImage {
+        // height: 25rem;
+        height: 100vh;
+      }
+    }
+
+    p {
+      width: 40%;
+      // text-align: center;
+      top: 19rem;
+      left: 2rem;
+    }
+
+    .buttonDiv {
+      top: 26rem;
+      left: 2rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    p {
+      top: 21rem;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .headerImageDiv {
+      .laptopImage {
+        display: none;
+      }
+      .tabMobileImage {
+        display: block;
+      }
+    }
+    article {
+      top: 10rem;
+      width: 100%;
+      text-align: center;
+      left: 0rem;
+    }
+    p {
+      width: 100%;
+      top: 20rem;
+      text-align: center;
+      font-weight: bold;
+      left: 0rem;
+    }
+
+    .buttonDiv {
+      top: 28rem;
+      left: 13rem;
+    }
+  }
+
+  @media (max-width: 550px) {
+    article {
+      // top: 7rem;
+      width: 97%;
+    }
+    p {
+      width: 98%;
+      text-align: center;
+      // top: 15rem;
+      left: 0rem;
+    }
+
+    .buttonDiv {
+      // text-align: center;
+      left: 10rem;
+    }
+  }
+
+  @media (max-width: 580px) {
+    .buttonDiv {
+      left: 11rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .buttonDiv {
+      left: 8rem;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .buttonDiv {
+      left: 7rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .buttonDiv {
+      left: 6rem;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .buttonDiv {
+      left: 5rem;
+    }
+  }
+  @media (max-width: 340px) {
+    .buttonDiv {
+      left: 4rem;
+    }
+  }
+  @media (max-width: 310px) {
+    .buttonDiv {
+      left: 3rem;
+    }
+  }
+  @media (max-width: 290px) {
+    .buttonDiv {
+      left: 2.5rem;
+    }
+  }
+}

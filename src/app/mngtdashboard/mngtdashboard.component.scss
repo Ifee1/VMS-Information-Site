@@ -1,0 +1,129 @@
+section {
+  position: relative;
+  margin: 4rem 0rem;
+
+  .imageBox {
+    img {
+      width: 79rem;
+      height: 28rem;
+    }
+  }
+
+  .overallContainer,
+  .valueContainer {
+    position: absolute;
+    top: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .smallDiv,
+    .trustUsDiv {
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+
+      //   gap: 1rem;
+
+      article {
+        font-size: 2.5rem;
+        font-weight: 800;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        height: 3rem;
+        span {
+          font-size: 3rem;
+          color: #137c31;
+        }
+      }
+
+      img {
+        width: 3rem;
+      }
+    }
+    .smallDiv:nth-child(1) {
+      // background-color: #137c31;
+      margin-top: 0.8rem;
+    }
+  }
+
+  .valueContainer {
+    top: 10rem;
+    .titleDiv,
+    .trustUsContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .trustUsContainer {
+      justify-content: space-around;
+
+      .trustUsDiv {
+        width: 35%;
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .overallContainer .smallDiv {
+      h3 {
+        margin-top: 0.5rem;
+      }
+      article {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .overallContainer {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      top: 3rem;
+      .smallDiv:nth-child(2) {
+        grid-column: 3;
+      }
+      .smallDiv:nth-child(3) {
+        grid-column: 2;
+      }
+
+      h3 {
+        width: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .imageBox {
+      img {
+        width: 79rem;
+        height: 43rem;
+      }
+    }
+    .overallContainer {
+      display: flex;
+      flex-direction: column;
+      top: 6rem;
+      gap: 1rem;
+
+      .smallDiv {
+        article {
+          margin-top: 0;
+        }
+
+        h3 {
+          margin-top: 0;
+        }
+      }
+      .smallDiv:nth-child(3) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}

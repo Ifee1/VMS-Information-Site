@@ -1,0 +1,177 @@
+section {
+  padding: 2rem;
+  .topSection {
+    text-align: center;
+    .mainH4 {
+      font-size: 1.5rem;
+      color: #137c31;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-family: "Open Sans", sans-serif;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .flexAccordion {
+    max-width: 100%;
+    margin: 4rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .accordion1 {
+      flex-basis: 48%;
+      overflow: hidden;
+      align-self: flex-start;
+
+      .accordion {
+        max-width: 80%;
+        padding-bottom: 1.5rem;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+
+      .accordionQuestion {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        align-items: center;
+        padding: 1rem;
+        box-shadow: 0 2px 10px rgba(197, 191, 191, 0.8);
+        border: 1px #ebe7e7;
+
+        h3 {
+          margin: 0;
+        }
+      }
+
+      .accordionAnswer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(197, 191, 191, 0.8);
+        text-align: justify;
+
+        p {
+          margin: 0;
+        }
+
+        &.show {
+          max-height: 3rem;
+          padding: 1.5rem;
+        }
+      }
+    }
+    .accordion2 {
+      flex-basis: 48%;
+      overflow: hidden;
+      align-self: flex-start;
+
+      .accordion {
+        max-width: 80%;
+        padding-bottom: 1.5rem;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+
+      .accordionQuestion {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffffff;
+        align-items: center;
+        padding: 1rem;
+        box-shadow: 0 2px 10px rgba(197, 191, 191, 0.8);
+        border: 1px #ebe7e7;
+
+        h3 {
+          margin: 0;
+        }
+      }
+
+      .accordionAnswer {
+        box-shadow: 0 2px 10px rgba(197, 191, 191, 0.8);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+        background-color: #ffffff;
+        text-align: justify;
+
+        p {
+          padding: 0.5rem;
+          margin: 0;
+        }
+
+        &.show {
+          max-height: 3rem;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .flexAccordion .accordion1 .accordion {
+      max-width: 90%;
+    }
+    .flexAccordion .accordion2 .accordion {
+      max-width: 90%;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .flexAccordion {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .flexAccordion .accordion .accordionQuestion {
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .flexAccordion {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    padding-top: 5rem;
+  }
+}
+
+@media (max-width: 330px) {
+  section {
+    padding-top: 9rem;
+  }
+}
+
+@media (max-width: 300px) {
+  section {
+    padding-top: 13rem;
+
+    .topSection .mainH4 {
+      font-size: 1rem;
+    }
+
+    .flexAccordion {
+      .accordion1,
+      .accordion2 {
+        align-self: center;
+      }
+    }
+  }
+}

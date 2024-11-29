@@ -1,0 +1,96 @@
+<section id="features">
+  <h4 class="mainH4">Features</h4>
+  <div class="featuresSection">
+    <article id="article">
+      <h2 class="h2Visitor">
+        <strong> Visitor Management, Simplified.</strong>
+      </h2>
+      <p class="h2P">
+        Effortlessly manage visitor access, track interactions,
+        <br />
+        and ensure estate security with this innovation.
+      </p>
+    </article>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-inner">
+      <div class="carousel-item" *ngFor="let image of getVisibleImages()">
+        <div class="imgWrapper">
+          <img [src]="image.source" alt="Image" />
+        </div>
+        <div class="carousel-caption">
+          <img [src]="image.icon" alt="" class="svgImage" />
+          <h2>
+            <strong>{{ image.title }}</strong>
+          </h2>
+          <p>{{ image.description }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-controls">
+      <span (click)="prevSlide()">
+        <svg
+          width="800px"
+          height="800px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="indicatorSvg"
+        >
+          <rect width="24" height="24" fill="transparent" />
+          <path
+            d="M14.5 17L9.5 12L14.5 7"
+            stroke="#ffffff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+      <span (click)="nextSlide()">
+        <svg
+          width="800px"
+          height="800px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="indicatorSvg"
+        >
+          <rect width="24" height="24" fill="transparent" />
+          <path
+            d="M9.5 7L14.5 12L9.5 17"
+            stroke="#ffffff"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+    </div>
+    <div class="carousel-indicators">
+      <span
+        *ngFor="let image of images; let i = index"
+        class="indicator"
+        (click)="gotoSlide(i)"
+        [class.active]="i === currentIndex"
+      ></span>
+    </div>
+  </div>
+
+  <div class="mobileCarouselContainer">
+    <div class="carousel-inner">
+      <div class="carousel-item" *ngFor="let image of getMobileImages()">
+        <div class="imgWrapper">
+          <img [src]="image.source" alt="Image" />
+        </div>
+        <div class="carousel-caption">
+          <img [src]="image.icon" alt="" class="svgImage" />
+          <h2>
+            <strong>{{ image.title }}</strong>
+          </h2>
+          <p>{{ image.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

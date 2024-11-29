@@ -1,0 +1,111 @@
+section {
+  margin: 3rem 0rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // gap: 2rem;
+
+  .mobileDiv {
+    display: none;
+  }
+
+  .imageContainer {
+    position: relative;
+    width: 40%;
+    padding: 1rem;
+    align-self: flex-start;
+
+    .image1 {
+      width: 95%;
+      height: 21rem;
+    }
+    .image2 {
+      position: absolute;
+      top: 11rem;
+      left: 7rem;
+      width: 50%;
+      height: 16rem;
+    }
+  }
+
+  .mainH4 {
+    font-size: 1.5rem;
+    color: #137c31;
+    letter-spacing: 1px;
+    margin: 0;
+    // margin-left: 4rem;
+    // margin-bottom: 0;
+  }
+
+  .textContainer {
+    width: 40%;
+    h2 {
+      margin-top: 0rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    p {
+      text-align: left;
+      font-size: 1.1rem;
+
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .textContainer {
+      h2 {
+        font-size: 1.2rem;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 1rem;
+    .textContainer {
+      width: 43%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  section {
+    flex-direction: column;
+
+    .mobileDiv {
+      display: block;
+      padding: 0rem 0.5rem;
+      text-align: center;
+      h2 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .imageContainer {
+      align-items: stretch;
+      width: 100%;
+    }
+
+    .textContainer {
+      width: 100%;
+      h4 {
+        display: none;
+      }
+      article {
+        padding: 0rem 1rem;
+        text-align: justify;
+        h2 {
+          display: none;
+        }
+      }
+    }
+  }
+}
