@@ -35,6 +35,7 @@
             "styles": ["src/styles.scss"],
             "scripts": []
           },
+
           "configurations": {
             "production": {
               "budgets": [
@@ -83,11 +84,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "assets"
               }
             ],
-            "styles": ["src/styles.scss"],
-            "scripts": []
+            "styles": ["src/styles.scss", "src/custom-styles.css"],
+            "scripts": ["src/custom-scripts.js"]
           }
         }
       }

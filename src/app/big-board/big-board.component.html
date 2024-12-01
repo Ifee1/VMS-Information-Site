@@ -17,10 +17,10 @@
     <div class="carousel-inner">
       <div class="carousel-item" *ngFor="let image of getVisibleImages()">
         <div class="imgWrapper">
-          <img [src]="image.source" alt="Image" />
+          <img loading="lazy" [src]="image.source" alt="Image" />
         </div>
         <div class="carousel-caption">
-          <img [src]="image.icon" alt="" class="svgImage" />
+          <img loading="lazy" [src]="image.icon" alt="" class="svgImage" />
           <h2>
             <strong>{{ image.title }}</strong>
           </h2>
@@ -81,10 +81,10 @@
     <div class="carousel-inner">
       <div class="carousel-item" *ngFor="let image of getMobileImages()">
         <div class="imgWrapper">
-          <img [src]="image.source" alt="Image" />
+          <img loading="lazy" [src]="image.source" alt="Image" />
         </div>
         <div class="carousel-caption">
-          <img [src]="image.icon" alt="" class="svgImage" />
+          <img loading="lazy" [src]="image.icon" alt="" class="svgImage" />
           <h2>
             <strong>{{ image.title }}</strong>
           </h2>

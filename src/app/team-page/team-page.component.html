@@ -19,7 +19,7 @@
       <div class="carousel-inner">
         <div class="carousel-item" *ngFor="let image of getVisibleImages()">
           <div class="imgWrapper">
-            <img [src]="image.source" alt="Image" />
+            <img loading="lazy" [src]="image.source" alt="Image" />
           </div>
           <div class="carousel-caption-wrapper">
             <div class="carousel-caption">
@@ -85,7 +85,7 @@
     <div class="carousel-inner">
       <div class="carousel-item" *ngFor="let image of getMobileImages()">
         <div class="imgWrapper">
-          <img [src]="image.source" alt="Image" />
+          <img loading="lazy" [src]="image.source" alt="Image" />
         </div>
         <div class="carousel-caption-wrapper">
           <div class="carousel-caption">
