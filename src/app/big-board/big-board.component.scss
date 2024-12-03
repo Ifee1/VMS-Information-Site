@@ -3,7 +3,7 @@ section {
   // border: 1px solid red;
   .mainH4 {
     font-size: 1.5rem;
-    color: #137c31;
+    color: #e46c0a;
     letter-spacing: 1px;
     padding-left: 2.8rem;
     margin-bottom: 0;
@@ -74,7 +74,8 @@ section {
       }
 
       .carousel-caption {
-        color: #000000;
+        // color: #000000;
+
         position: absolute;
         top: 4rem;
         width: 63%;
@@ -103,7 +104,8 @@ section {
           opacity: 1;
         }
         .carousel-caption {
-          color: #000000;
+          // color: #000000;
+          color: #e46c0a;
         }
       }
 
@@ -137,9 +139,14 @@ section {
         width: 2rem;
         height: 2rem;
         stroke-width: 0.2rem;
-        background-color: #137c31;
+        background-color: #e46c0a;
         border-radius: 5px;
+        transition: 0.5s ease-in-out;
       }
+    }
+
+    .carousel-controls:hover .indicatorSvg {
+      background-color: #10253f;
     }
 
     .carousel-indicators {

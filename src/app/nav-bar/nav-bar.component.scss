@@ -1,7 +1,7 @@
 nav {
   position: fixed;
   display: flex;
-  color: #ffffff;
+  color: #10253f;
   justify-content: space-between;
   align-items: center;
   transform: translate(2rem, 3rem);
@@ -11,6 +11,7 @@ nav {
 
   h2 {
     margin: 0;
+    color: #ffffff;
   }
 
   .mobileNavContainer {
@@ -56,6 +57,10 @@ nav {
       }
     }
 
+    .linkDiv:nth-child(1) {
+      color: #ffffff;
+    }
+
     .navDropdown {
       display: none;
       width: 8rem;
@@ -92,15 +97,25 @@ nav {
 }
 
 nav.scrolled {
+  h2 {
+    margin: 0;
+    color: #10253f;
+  }
   background-color: rgba(223, 231, 231, 0.621);
   backdrop-filter: blur(7px);
-  color: #137c31;
+  // color: #137c31;
 
-  .linkWrapper .linkDiv .navSvg .navBarSvg {
-    stroke-width: 0.1rem;
+  .linkWrapper {
+    .linkDiv .navSvg .navBarSvg {
+      stroke-width: 0.1rem;
 
-    path {
-      stroke: #137c31;
+      path {
+        stroke: #10253f;
+      }
+    }
+
+    .linkDiv:nth-child(1) {
+      color: #10253f;
     }
   }
 }
@@ -133,26 +148,6 @@ nav.scrolled {
         display: block;
       }
 
-      // .mobileNav {
-      //   display: none;
-      //   position: fixed;
-      //   top: 0rem;
-      //   left: -100%;
-      //   width: 50%;
-      //   height: 100vh;
-      //   transition: left 0.5s ease-in-out, background-color 0.3s ease;
-      //   background-color: rgba(223, 231, 231, 0.621);
-      //   backdrop-filter: blur(7px);
-      //   color: #137c31;
-      //   z-index: 9999;
-      //   padding-top: 6rem;
-      // }
-
-      // .mobileNav.show {
-      //   display: block;
-      //   left: 0;
-      // }
-
       .mobileNav {
         position: fixed;
         top: -1rem;
@@ -160,7 +155,8 @@ nav.scrolled {
         width: 50%;
         height: 100vh;
         transition: left 0.5s ease-in-out, background-color 0.3s ease;
-        background-color: rgba(223, 231, 231, 0.621);
+        // background-color: rgba(223, 231, 231, 0.621);
+        background-color: rgba(198, 217, 241, 0.801);
         backdrop-filter: blur(7px);
         color: #137c31;
         z-index: 9999;
@@ -180,10 +176,10 @@ nav.scrolled {
         top: 1rem;
       }
 
-      .mobileScrolled {
-        background-color: rgba(19, 124, 49, 0.676);
-        backdrop-filter: blur(7px);
-      }
+      // .mobileScrolled {
+      //   background-color: rgba(16, 37, 63, 0.863);
+      //   backdrop-filter: blur(7px);
+      // }
     }
 
     .mobileNav ul {
@@ -198,89 +194,12 @@ nav.scrolled {
     }
 
     .mobileNav a {
-      color: #ffffff;
+      color: #10253f;
       text-decoration: none;
       font-size: 1.5rem;
     }
   }
 }
-
-// @media (max-width: 770px) {
-//   nav {
-//     transform: translate(0rem, 1rem);
-
-//     .linkWrapper {
-//       display: none;
-//     }
-
-//     .mobileNavContainer {
-//       display: block;
-
-//       .mobileNavClose,
-//       .mobileNavOpen {
-//         cursor: pointer;
-//       }
-
-//       .mobileNavOpen {
-//         display: block;
-//       }
-
-//       .mobileNav {
-//         position: fixed;
-//         top: 0;
-//         left: -100%; /* Ensure the nav is completely hidden initially */
-//         width: 50%;
-//         height: 100vh;
-//         transition: left 0.5s ease-in-out, background-color 0.3s ease; /* Smooth transition for left and background-color */
-//         background-color: rgba(223, 231, 231, 0.621);
-//         backdrop-filter: blur(7px);
-//         color: #137c31;
-//         z-index: 9999;
-//         padding-top: 6rem;
-//       }
-
-//       .mobileNav.show {
-//         left: 0; /* Fully reveal the nav when 'show' is applied */
-//       }
-
-//       .mobileNavClose {
-//         display: block;
-//         position: absolute;
-//         z-index: 99999;
-//         right: 1rem;
-//         top: 1rem;
-//       }
-//     }
-
-//     .mobileNav ul {
-//       list-style: none;
-//       padding: 0;
-//       margin: 0;
-//     }
-
-//     .mobileNav li {
-//       padding: 1rem;
-//       border-bottom: 1px solid #444;
-//     }
-
-//     .mobileNav a {
-//       color: #ffffff;
-//       text-decoration: none;
-//       font-size: 1.5rem;
-//     }
-//   }
-
-//   // Apply background-color change on scroll
-//   .mobileNav.mobileScrolled {
-//     background-color: rgba(
-//       19,
-//       124,
-//       49,
-//       0.9
-//     ); /* Darker green for better visibility */
-//     backdrop-filter: blur(10px); /* Enhanced blur effect */
-//   }
-// }
 
 @media (max-width: 650px) {
   nav {
