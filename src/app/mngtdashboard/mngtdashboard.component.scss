@@ -110,10 +110,11 @@ section {
     .overallContainer {
       display: flex;
       flex-direction: column;
-      top: 6rem;
-      gap: 1rem;
+      top: 2rem;
+      gap: 5rem;
 
       .smallDiv {
+        align-items: flex-start;
         article {
           margin-top: 0;
         }
