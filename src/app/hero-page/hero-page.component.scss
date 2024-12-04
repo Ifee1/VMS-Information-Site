@@ -157,14 +157,16 @@ section {
       }
     }
     article {
-      top: 10rem;
+      color: #ffffff;
+      top: 21rem;
       width: 100%;
       text-align: center;
       left: 0rem;
     }
     p {
+      color: #ffffff;
       width: 100%;
-      top: 20rem;
+      top: 26rem;
       text-align: center;
       font-weight: bold;
       left: 0rem;
@@ -205,9 +207,34 @@ section {
     }
   }
 
+  @media (max-width: 475px) {
+    article {
+      color: #ffffff;
+      top: 19rem;
+    }
+    p {
+      top: 25rem;
+    }
+  }
+
   @media (max-width: 450px) {
     .buttonDiv {
       left: 7rem;
+    }
+  }
+
+  @media (max-width: 475px) {
+    article {
+      top: 17rem;
+      width: 95%;
+      left: 0.5rem;
+    }
+    p {
+      top: 25rem;
+    }
+
+    .buttonDiv {
+      left: 6.5rem;
     }
   }
 

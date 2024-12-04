@@ -4,7 +4,7 @@ nav {
   color: #10253f;
   justify-content: space-between;
   align-items: center;
-  transform: translate(2rem, 3rem);
+  transform: translate(2rem, 1.5rem);
   padding: 0.5rem 1.3rem;
   width: 90%;
   z-index: 99999;
@@ -131,6 +131,10 @@ nav.scrolled {
 @media (max-width: 850px) {
   nav {
     transform: translate(0rem, 1rem);
+
+    .logoDiv h2 {
+      color: #10253f;
+    }
 
     .linkWrapper {
       display: none;
