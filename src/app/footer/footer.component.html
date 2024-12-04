@@ -8,7 +8,9 @@
       <div class="contactWrapperDiv">
         <div class="contactTab">
           <img src="../../assets/telephone.png" class="contactIcon" alt="" />
-          <p>+234 9057738889</p>
+          <a class="phoneLink" href="tel:+2349057738889">
+            <p>+234 9057738889</p>
+          </a>
         </div>
         <div class="contactTab">
           <img src="../../assets/email.png" class="contactIcon" alt="" />
@@ -16,13 +18,19 @@
             >sydaniGroup&#64;gmail.com</a
           >
         </div>
+
         <div class="contactTab">
           <img src="../../assets/home.png" class="contactIcon" alt="" />
-
-          <p>
-            Plot 1422 Independence Avenue, Central Business District, Abuja,
-            Nigeria.
-          </p>
+          <a
+            class="addressLink"
+            href="https://www.google.com/maps/place/Plot+1422+Independence+Av,+Central+Business+District,+Abuja,+Nigeria"
+            target="_blank"
+          >
+            <p>
+              Plot 1422 Independence Avenue, Central Business District, Abuja,
+              Nigeria.
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -32,7 +40,7 @@
       </div>
       <p>Streamline your estate's visitor experience with our innovative VMS</p>
       <div class="contactWrapperDiv">
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('home')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -40,7 +48,7 @@
           />
           <p>Home Page</p>
         </div>
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('features')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -48,7 +56,7 @@
           />
           <p>Features</p>
         </div>
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('aboutus')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -56,7 +64,7 @@
           />
           <p>About us</p>
         </div>
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('projects')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -65,7 +73,7 @@
 
           <p>Achievement Board</p>
         </div>
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('services')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -74,7 +82,7 @@
 
           <p>Services</p>
         </div>
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('faq')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -83,7 +91,7 @@
 
           <p>FAQs</p>
         </div>
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('pricingplan')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -92,7 +100,7 @@
 
           <p>Pricing Plan</p>
         </div>
-        <div class="contactTab">
+        <div class="contactTab" (click)="scrollToSection('theteam')">
           <img
             src="../../assets/right-chevron.png"
             class="contactIcon"
@@ -119,15 +127,27 @@
 
       <div class="contactWrapperDiv">
         <div class="contactTab">
-          <a href=""></a>
-          <img src="../../assets/linkedin.png" class="contactIcon" alt="" />
-          <img src="../../assets/twitter.png" class="contactIcon" alt="" />
-          <img
-            src="../../assets/instagram (1).png"
-            class="contactIcon"
-            alt=""
-          />
-          <img src="../../assets/youtube.png" class="contactIcon" alt="" />
+          <a
+            href="https://www.linkedin.com/company/sydani-group/"
+            target="_blank"
+          >
+            <img src="../../assets/linkedin.png" class="contactIcon" alt=""
+          /></a>
+          <a href="https://twitter.com/@SydaniGroup" target="_blank">
+            <img src="../../assets/twitter.png" class="contactIcon" alt=""
+          /></a>
+
+          <a href="https://www.instagram.com/sydanigroup" target="_blank">
+            <img
+              src="../../assets/instagram (1).png"
+              class="contactIcon"
+              alt=""
+            />
+          </a>
+
+          <a href="https://www.youtube.com/@sydanigroup" target="_blank">
+            <img src="../../assets/youtube.png" class="contactIcon" alt="" />
+          </a>
         </div>
       </div>
     </div>

@@ -16,15 +16,28 @@ section {
         display: flex;
         align-items: center;
         gap: 1rem;
+        cursor: pointer;
+        transition: 0.5ms all ease-in-out;
 
         .contactIcon {
           width: 1.5rem;
           height: 1.5rem;
         }
 
-        .emailLink {
-          color: #e46c0a;
+        .emailLink,
+        .phoneLink,
+        .addressLink {
+          color: #ffffff;
         }
+
+        .phoneLink,
+        .addressLink {
+          text-decoration: none;
+        }
+      }
+
+      .contactTab :hover {
+        color: #e46c0a;
       }
     }
 
@@ -49,7 +62,6 @@ section {
 
     .firstColumn:nth-child(3) {
       width: max-content;
-      //   align-self: flex-end;
     }
   }
 
@@ -62,6 +74,32 @@ section {
   @media (max-width: 530px) {
     .wrapperDiv {
       flex-direction: column;
+
+      .firstColumn {
+        p {
+          width: 16rem;
+        }
+
+        .contactTab {
+          .phoneLink {
+            width: 8rem;
+          }
+        }
+      }
     }
+  }
+
+  @media (max-width: 360px) {
+    .wrapperDiv .firstColumn:nth-child(2) {
+      .contactTab {
+        width: 8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 310px) {
+  section {
+    padding-left: 1rem;
   }
 }
